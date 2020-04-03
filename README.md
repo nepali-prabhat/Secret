@@ -1,3 +1,3 @@
 # secret
 
-The Secret Hinsa
+The Secret Project 

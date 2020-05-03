@@ -12,6 +12,8 @@ class AppColor {
   static const yellow = const Color.fromRGBO(249, 209, 4, 1);
   static const yellow75 = const Color.fromRGBO(249, 209, 4, .75);
   static const dark = const Color.fromRGBO(31, 28, 12, 1);
+  static const dark2 = const Color.fromRGBO(40, 40, 40, 1);
+  static const dark3 = const Color.fromRGBO(65, 65, 65, 1);
   static const light = const Color.fromRGBO(254, 252, 245, 1);
 }
 
@@ -22,7 +24,7 @@ ThemeData buildTheme(Brightness brightness) {
       primaryColorLight: AppColor.light,
       primaryColorDark: AppColor.dark,
       accentColor: AppColor.yellow,
-      scaffoldBackgroundColor: AppColor.dark,
+      scaffoldBackgroundColor: AppColor.dark2,
       backgroundColor: AppColor.dark,
       accentIconTheme: IconThemeData(color: AppColor.dark),
       textTheme: TextTheme(

@@ -1,32 +1,31 @@
 import 'package:flutter/material.dart';
-import '../utils/theme.dart' as customTheme;
+import '../utils/theme.dart' as util_theme;
+import '../components/index.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-            child: Column(
-                    children: [
-                      Text("Hello World! From next file. We are testing on a longer title heres", style: customTheme.CustomStyles.subtitle),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical:10),
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).primaryColor,
-                          borderRadius: BorderRadius.all(Radius.circular(20))
-                          ),
-                        child: Text("Something InterestingContainer"),
-                      )
-                    ]
-            ),
-          ),
+          child: Container(
+        child: Center(
+            child: Chip(
+                avatar: CircleAvatar(
+                  child: AppText("H",
+                      style: TextStyle(
+                          color: Theme.of(context).primaryColorLight)),
+                ),
+                shadowColor: Theme.of(context).primaryColor,
+                backgroundColor: Theme.of(context).primaryColor,
+                labelStyle: Theme.of(context).textTheme.body2,
+                label: Text("Hello world"))),
+      )),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          customTheme.CustomStyles.changeTheme(context);
+        onPressed: () {
+          util_theme.changeTheme(context);
         },
-        child: Text("+"),
+        child: Text("Toggle"),
       ),
     );
   }

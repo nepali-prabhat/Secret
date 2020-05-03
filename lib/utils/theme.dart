@@ -22,7 +22,7 @@ ThemeData buildTheme(Brightness brightness) {
     return ThemeData.dark().copyWith(
       primaryColor: AppColor.yellow,
       primaryColorLight: AppColor.light,
-      primaryColorDark: AppColor.dark,
+      primaryColorDark: AppColor.dark2,
       accentColor: AppColor.yellow,
       scaffoldBackgroundColor: AppColor.dark2,
       backgroundColor: AppColor.dark,
@@ -52,7 +52,7 @@ ThemeData buildTheme(Brightness brightness) {
   } else {
     return ThemeData.light().copyWith(
       primaryColor: AppColor.yellow,
-      primaryColorLight: AppColor.dark,
+      primaryColorLight: AppColor.dark2,
       primaryColorDark: AppColor.light,
       accentColor: AppColor.yellow,
       scaffoldBackgroundColor: AppColor.light,

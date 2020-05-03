@@ -24,6 +24,7 @@ ThemeData buildTheme(Brightness brightness) {
       accentColor: AppColor.yellow,
       scaffoldBackgroundColor: AppColor.dark,
       backgroundColor: AppColor.dark,
+      accentIconTheme: IconThemeData(color: AppColor.dark),
       textTheme: TextTheme(
           title: TextStyle(
               fontFamily: 'quicksand',
@@ -54,6 +55,7 @@ ThemeData buildTheme(Brightness brightness) {
       accentColor: AppColor.yellow,
       scaffoldBackgroundColor: AppColor.light,
       backgroundColor: AppColor.light,
+      accentIconTheme: IconThemeData(color: AppColor.light),
       textTheme: TextTheme(
         title: TextStyle(
             fontFamily: 'quicksand',

@@ -12,20 +12,21 @@ class MyHomePage extends StatelessWidget {
         child: Center(
             child: Chip(
                 avatar: CircleAvatar(
-                  child: AppText("H",
+                  child: AppText("C",
                       style: TextStyle(
-                          color: Theme.of(context).primaryColorLight)),
+                          fontWeight: FontWeight.w700,
+                          color: Theme.of(context).primaryColor)),
                 ),
-                shadowColor: Theme.of(context).primaryColor,
                 backgroundColor: Theme.of(context).primaryColor,
                 labelStyle: Theme.of(context).textTheme.body2,
                 label: Text("Hello world"))),
       )),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Theme.of(context).primaryColor,
         onPressed: () {
           util_theme.changeTheme(context);
         },
-        child: Text("Toggle"),
+        child: Text("Theme"),
       ),
     );
   }

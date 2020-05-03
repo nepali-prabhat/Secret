@@ -1,0 +1,11 @@
+Chip(
+                avatar: CircleAvatar(
+                  child: AppText("C",
+                      style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          color: Theme.of(context).primaryColor)),
+                ),
+                backgroundColor: Theme.of(context).primaryColor,
+                labelStyle: Theme.of(context).textTheme.body2,
+                label: Text("Hello world"))),
+      ))
